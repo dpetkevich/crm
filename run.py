@@ -4,9 +4,11 @@ import requests
 
 app = Flask(__name__)
 
-@app.route("/")
+@app.route("/boristheanimal5423")
 def hello():
-    return "Hello World!"
+	print request.json
+	print request.values
+	return "Hello World!"
 
 if __name__ == "__main__":
     app.run()
