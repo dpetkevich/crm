@@ -48,15 +48,12 @@ def hello():
 
 	url = "https://restapi.crmtext.com/smapi/rest?method=sendsmsmsg"
 
-	print "response is "
-	print full_bot_response["responses"]
-	print full_bot_response["responses"][0]
-	print bot_response
-
-	# payload = {'message':bot_response, 'phone_number': 2812362023}
 
 
-	# response = requests.post(url, params = payload, auth=(crm_username,crm_pw))
+	payload = {'message':bot_response, 'phone_number': 2812362023}
+
+
+	response = requests.post(url, params = payload, auth=(crm_username,crm_pw))
 
 
 	return "Hello World!"
