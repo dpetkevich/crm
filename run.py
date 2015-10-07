@@ -22,8 +22,8 @@ def hello():
 	print 'message'
 	print message
 
-	if message.lower() == 'ben':
-		message = 'Hi'
+	# if message.lower() == 'ben':
+	# 	message = 'Hi'
 
 	print message
 
