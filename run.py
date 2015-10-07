@@ -14,21 +14,7 @@ crm_pw = 'boris5423:BEN'
 
 @app.route("/boristheanimal5423", methods=['GET','POST'])
 def hello():
-	print 'hihi'
-	print "url is"
-	print request.url
-	print "form is "
-	print request.form
-	print 'json is'
-	print request.json
-	print 'value are'
-	print request.values
-	print 'args are'
-	print request.args
-	print "get_json is"
-	print request.get_json
-	print "data is"
-	print request.data
+	
 
 
 	message = request.values.get('message','hi')
@@ -51,6 +37,9 @@ def hello():
 	pandora_response = requests.post(query, data = payload1)
 
 	full_bot_response = pandora_response.json()
+
+	print 'full bot'
+	print full_bot_response
 
 	bot_response = full_bot_response["responses"][0]
 
