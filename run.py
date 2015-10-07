@@ -54,6 +54,9 @@ def hello():
 
 	url = "https://restapi.crmtext.com/smapi/rest?method=sendsmsmsg"
 
+	print "response is "
+	print bot_response
+
 	payload = {'message':bot_response, 'phone_number': 2812362023}
 
 
