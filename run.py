@@ -1,8 +1,9 @@
-from flask import Flask, request
+from flask import Flask, request, redirect, make_response, session
 from bs4 import BeautifulSoup
 import requests
 import os
 import json
+import sys
 
 app = Flask(__name__)
 
@@ -31,7 +32,7 @@ def hello():
 	
 	payload1 = {
 	'user_key' : str(user_key).encode('utf-8'),
-	"input": str(message).encode('utf-8')
+	"input": "hi"
 	}
 
 	pandora_response = requests.post(query, data = payload1)
