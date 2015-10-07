@@ -35,6 +35,10 @@ def hello():
 	print 'message'
 	print message
 
+	if message.lower = 'ben':
+		message = 'Hi'
+
+	print message
 
 	### send message to pandora bots
 	query = "https://aiaas.pandorabots.com/atalk/" + str(app_id) + "/" + str(botname) 
