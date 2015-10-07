@@ -35,7 +35,7 @@ def hello():
 	print 'message'
 	print message
 
-	if message.lower = 'ben':
+	if message.lower() = 'ben':
 		message = 'Hi'
 
 	print message
