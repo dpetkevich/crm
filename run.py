@@ -23,8 +23,8 @@ def hello():
 	print 'message'
 	print message
 
-	# if message.lower() == 'ben':
-	# 	message = 'Hi'
+	if message.lower() == 'ben':
+		message = 'Hi'
 
 
 	### send message to pandora bots
@@ -32,7 +32,7 @@ def hello():
 	
 	payload1 = {
 	'user_key' : str(user_key).encode('utf-8'),
-	"input": "hi"
+	"input": str(message).encode('utf-8')
 	}
 
 	pandora_response = requests.post(query, data = payload1)
