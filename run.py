@@ -25,7 +25,6 @@ def hello():
 	# if message.lower() == 'ben':
 	# 	message = 'Hi'
 
-	print message
 
 	### send message to pandora bots
 	query = "https://aiaas.pandorabots.com/atalk/" + str(app_id) + "/" + str(botname) 
@@ -51,10 +50,10 @@ def hello():
 	print "response is "
 	print bot_response
 
-	payload = {'message':bot_response, 'phone_number': 2812362023}
+	# payload = {'message':bot_response, 'phone_number': 2812362023}
 
 
-	response = requests.post(url, params = payload, auth=(crm_username,crm_pw))
+	# response = requests.post(url, params = payload, auth=(crm_username,crm_pw))
 
 
 	return "Hello World!"
